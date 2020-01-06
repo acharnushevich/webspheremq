@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <xs:complexType name="SYSTEM_A">
+        <xs:sequence>
+            <xs:element name="REQUEST_ID">
+                <xs:complexType>
+                    <xs:attribute name="Value" type="xs:string"/>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="REPLY_ID">
+                <xs:complexType>
+                    <xs:attribute name="Value" type="xs:string"/>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="DATA_A">
+        <xs:sequence>
+            <xs:element name="MESSAGE">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="PERSON_ID">
+                            <xs:complexType>
+                                <xs:attribute name="Value" type="xs:string"/>
+                            </xs:complexType>
+                        </xs:element>
+                        <xs:element name="DATE">
+                            <xs:complexType>
+                                <xs:attribute name="Value" type="xs:string"/>
+                            </xs:complexType>
+                        </xs:element>
+                        <xs:element name="TEXT">
+                            <xs:complexType>
+                                <xs:attribute name="Value" type="xs:string"/>
+                            </xs:complexType>
+                        </xs:element>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="SYSTEM_E">
+        <xs:sequence>
+            <xs:element name="REQUEST_ID" type="xs:string"/>
+            <xs:element name="REPLY_ID" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="DATA_E">
+        <xs:sequence>
+            <xs:element name="MESSAGE">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="PERSON_ID" type="xs:string"/>
+                        <xs:element name="DATE" type="xs:string"/>
+                        <xs:element name="TEXT" type="xs:string"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="REQUEST_ATTRIBUTE">
+        <xs:sequence>
+            <xs:element name="SYSTEM" type="SYSTEM_A"/>
+            <xs:element name="DATA" type="DATA_A"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="REQUEST_ELEMENT">
+        <xs:sequence>
+            <xs:element name="SYSTEM" type="SYSTEM_E"/>
+            <xs:element name="DATA" type="DATA_E"/>
+        </xs:sequence>
+    </xs:complexType>
+</xs:schema>

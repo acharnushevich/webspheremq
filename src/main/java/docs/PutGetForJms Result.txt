@@ -1,0 +1,15 @@
+This mess:
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<REQUEST>
+    <SYSTEM>
+        <REQUEST_ID>fa213eae-0198-448e-87cd-913b3429029c</REQUEST_ID>
+        <REPLY_ID>Id</REPLY_ID>
+    </SYSTEM>
+    <DATA>
+        <MESSAGE>
+            <PERSON_ID>Id</PERSON_ID>
+            <DATE>03.01.2020</DATE>
+            <TEXT>Text</TEXT>
+        </MESSAGE>
+    </DATA>
+</REQUEST>

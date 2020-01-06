@@ -1,0 +1,15 @@
+This mess:
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<REQUEST>
+    <SYSTEM>
+        <REQUEST_ID Value="b180906d-6208-4bb1-876f-784a06af53a4"/>
+        <REPLY_ID Value="Id"/>
+    </SYSTEM>
+    <DATA>
+        <MESSAGE>
+            <PERSON_ID Value="Id"/>
+            <DATE Value="03.01.2020"/>
+            <TEXT Value="Text"/>
+        </MESSAGE>
+    </DATA>
+</REQUEST>
